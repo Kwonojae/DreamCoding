@@ -3,7 +3,7 @@
 //use this for Valina Javascript.
 'use strict';
 
-//2. Variable 변수
+//2. Variable 변수  rw(read/write) 읽고쓰기가 가능함
 //let (added in ES6) 에서 추가됨  변수를 선언하는 키워드 let 
 
 let globalName = 'global name';
@@ -20,7 +20,7 @@ console.log(globalName);
 
 
 /*
-    3.Constants 값을 변경할수 없게 만듬
+    3.Constants 값을 변경할수 없게 만듬     r(read only) 읽기만 가능
     favor immutable data type always for a few reasons: 왠만하면 값이 할당 한 다음에 다시는 변경되지 않는 데이터 타입을 사용해 
     -security       이유 보안 해커방지
     -thread safety  
@@ -28,6 +28,10 @@ console.log(globalName);
 */
 const daysInWeek = 7;
 const maxNumber = 5;
+
+//Note!
+//Immutable data types: premitive types, frozen objects (i.e. object.freeze())  데이터 자체를 절대로 바꾸지못함
+//Mutable data types: all objects by default are mutable in JS      변경이가능한 데이터 타입    자바스크립트에선 오브젝트가 대부분 변경이 가능함
 
 //4. Variable types
 //primitive, single item: number, string, boolean, null, undefiedn, symbol
