@@ -1,3 +1,5 @@
+'use strict';
+
 //1. String concatenation
 console.log('my' + ' cat');
 console.log('1' + 2);  //JS 는 문자 + 숫자 = 문자 

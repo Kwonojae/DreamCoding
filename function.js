@@ -1,3 +1,5 @@
+'use strict';
+
 //function   input x outputd 
 //-fundamental building block in the program 프로그램을 구성하는 빌딩 블럭
 //-subprogram can be used multiple times    여러번 재사용 가능함 
@@ -151,7 +153,27 @@ const simpleMultiply = (a, b) => {
 })();
 
 
+//Fun quiz time
+//function calculate(command, a, b)
+//command: add, substract, divide, multiply, remainder
 
+function calculate(command, a, b) {
+    switch (command) {
+        case 'add':
+            return a + b;    
+        case 'substract':
+            return a - b;
+        case 'divide':
+            return a / b;
+        case 'multiply':
+            return a * b;
+        case 'remainder':
+            return a % b;
+        default:
+            throw Error('unkonwn command');
+        }
+}
+console.log(calculate('add', 2, 3));
 
 
 
