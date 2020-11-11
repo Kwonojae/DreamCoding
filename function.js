@@ -11,6 +11,9 @@
 // naming: doSomething, command, verb 무언가를 동작하기때문에 동사형태로 이름을 지정
 // e.g. createCardAndPoint -> createCard, createPoint
 //function is object in JS   자바스크립트에서 function 은 오브젝트이다 
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference 
+
 function printHello() {
     console.log('Hello');
 }
