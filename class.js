@@ -55,7 +55,7 @@ class User {
     }
 
     set age(value){ //값을 설정하기 때문에 value를 받아와야함
-        this._age = value < 0 ? 0 : value;
+        this._age = value < 0 ? 0 : value;  //value가 값이 - 라면 0을쓰고 아니면 지정된  value를 쓰겠다
     }
 }
 const user1 = new User('Steve', 'Job', -1);
@@ -65,8 +65,8 @@ console.log(user1.age);
 //Too soon!
 
     class Experiment { 
-    publicField = 2;
-    #privateField = 0;
+    publicField = 2;        //외부에서 접근가능
+    #privateField = 0;      //클래스 내부에서만 값이 보여지고 접근가능하고 값이 변경가능 외부에서는 불가능
 }
 
 const experiment = new Experiment();       

@@ -13,7 +13,7 @@ console.log(1 * 1); //multiply
 console.log(5 % 2); //remainder 나머지값
 console.log(2 ** 3); // exponentiation 2~3승
 
-//3. Increment and decrement operators
+//3. Increment and decrement operators 증감연산자
 let counter = 2;
 const preIncrement = ++counter;
 // counter = counter + 1;
@@ -22,9 +22,9 @@ console.log(`preIncrement: ${preIncrement}, counter: ${counter}`);
 const postIncrement = counter++;
 //postIncrement = counter;
 //counter = counter + 1;
-console.log(`preIncrement: ${preIncrement}, counter: ${counter}`);
+console.log(`preIncrement: ${preIncrement}, counter: ${counter}`);//Increment증가
 const preDecrement = --counter;     // 기호가 앞에있으면 바로업데이트되서 할당이됨
-console.log(`preIncrement: ${preDecrement}, counter: ${counter}`);
+console.log(`preIncrement: ${preDecrement}, counter: ${counter}`);  //Decrement감소
 const postDecrement = counter--;    //할당을 해놓고 업데이트는 그후에
 console.log(`preIncrement: ${preDecrement}, counter: ${counter}`);
 
