@@ -27,6 +27,10 @@ console.log(globalName);
     -security       이유 보안 해커방지
     -thread safety  
     -reduce human mistakes
+    컴포넌트는 재사용이 가능한 최소 단위를 뜻하며이는 흔히 JAVA같은 OOP 언어등의 class등의 
+    개념과는 다르다. 하나의 컴포넌트는 하나의 클래스로만 작성될 수도 있지만, 여러 개의 클래스로도 작성될 수 있기 때문이다. 
+    추가적으로 모듈(Module)과 혼동될 수 있는데 모듈은 특정 기능을 온전히 수행할 수 있도록 만들어 졌다면 그 모듈 내에서도 재사용이 가능한 단위가 컴포넌트라 할 수 있다.
+
 */
 const daysInWeek = 7;
 const maxNumber = 5;
