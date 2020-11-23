@@ -1,0 +1,23 @@
+'use strict'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Family(firstName) {
+            var _this = this;
+            
+            this.firstName = firstName;
+            var names = ['bill', 'mark', 'steve']
+            names.map(function(value, index) {
+                console.log(value + ' ' + _this.firstName)
+            })
+        }
+        var kims = new Family('kim');
+    </script>
+</body>
+</html>
