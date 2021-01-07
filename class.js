@@ -24,7 +24,7 @@
 
 //1. Class declarations
 class Person {
-    //constructor
+    //constructor 
     constructor(name, age) {    //생성자 오브젝트를 만들때 필요한 데이터를 전달함
         //fields
         this.name = name;
@@ -47,10 +47,10 @@ class User {
     constructor(firstName, lastName, age) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.age = age;
+        this.age = age;// = age 가 할당할때 set age가 호출이된다 set age로 가져온 값을 get age로 리턴해준다 
     }
 
-    get age(){      //값을 리턴해줘야함 
+    get age(){      //값을 리턴
         return this._age;
     }
 
@@ -118,13 +118,13 @@ class Shape {
 
 class Rectangle extends Shape{}
 class Triangle extends Shape{
-    //필요한 함수만 재정의해서 사용할수있다 오버라이딩
+    
     draw() {
-            super.draw();   //부모의 메소드를 호출
-        console.log('🔺');
+            super.draw();   //draw메소드를 오버라이딩해서 위에 shape에 정의된 draw가 호출되지 않는다 그래서 super를  부모의 메소드를 호출 한다 다향성
+        console.log('🔺');//오버라이딩해서 출력
     }
     getArea() {
-        return (this.width * this.height) / 2;
+        return (this.width * this.height) / 2;//필요한 함수만 재정의해서 사용할수있다 오버라이딩 위에 getArea를 재정의
     }
 }
 const rectangle = new Rectangle(20, 20, 'blue');
