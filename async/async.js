@@ -14,14 +14,14 @@ const user = fetchUser();
 user.then(console.log)
 console.log(user);
 
-// 2. await
+// 2. await     : async 안에서만 사용 가능 
 
 function delay(ms) { // 정해진 시간이 지나면 resolve를  호출하는 프로미스를 리턴하게됨 
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function getApple() {
-    await delay(2000);
+    await delay(2000);       //await delay가 끝날때까지 기다려줌 
     return '🍎';
 }
 
